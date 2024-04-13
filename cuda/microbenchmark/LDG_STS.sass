@@ -1,0 +1,162 @@
+	.headerflags	@"EF_CUDA_TEXMODE_UNIFIED EF_CUDA_64BIT_ADDRESS EF_CUDA_SM52 EF_CUDA_VIRTUAL_SM(EF_CUDA_SM52)"
+	.elftype	@"ET_EXEC"
+
+
+//--------------------- .text._Z11smem_kernelPi   --------------------------
+	.section	.text._Z11smem_kernelPi,"ax",@progbits
+	.sectioninfo	@"SHI_REGISTERS=28"
+	.align	32
+        .global         _Z11smem_kernelPi
+        .type           _Z11smem_kernelPi,@function
+        .size           _Z11smem_kernelPi,(.L_x_2 - _Z11smem_kernelPi)
+        .other          _Z11smem_kernelPi,@"STO_CUDA_ENTRY STV_DEFAULT"
+_Z11smem_kernelPi:
+.text._Z11smem_kernelPi:
+        /*0008*/                   MOV R1, c[0x0][0x20] ;
+        /*0010*/                   MOV R2, c[0x0][0x140] ;
+        /*0018*/                   MOV R3, c[0x0][0x144] ;
+        /*0028*/                   LDG.E.CI R8, [R2] ;
+        /*0030*/                   LDG.E.CI R9, [R2+0x4] ;
+        /*0038*/                   LDG.E.CI R10, [R2+0x8] ;
+        /*0048*/                   LDG.E.CI R11, [R2+0xc] ;
+        /*0050*/                   LDG.E.CI R12, [R2+0x10] ;
+        /*0058*/                   LDG.E.CI R13, [R2+0x14] ;
+        /*0068*/                   LDG.E.CI R14, [R2+0x18] ;
+        /*0070*/                   LDG.E.CI R15, [R2+0x1c] ;
+        /*0078*/                   LDG.E.CI R4, [R2+0x20] ;
+        /*0088*/                   LDG.E.CI R5, [R2+0x24] ;
+        /*0090*/                   LDG.E.CI R6, [R2+0x28] ;
+        /*0098*/                   LDG.E.CI R7, [R2+0x2c] ;
+        /*00a8*/                   LDG.E.CI R16, [R2+0x30] ;
+        /*00b0*/                   LDG.E.CI R17, [R2+0x34] ;
+        /*00b8*/                   LDG.E.CI R18, [R2+0x38] ;
+        /*00c8*/                   LDG.E.CI R19, [R2+0x3c] ;
+        /*00d0*/                   LDG.E.CI R20, [R2+0x40] ;
+        /*00d8*/                   LDG.E.CI R21, [R2+0x44] ;
+        /*00e8*/                   LDG.E.CI R22, [R2+0x48] ;
+        /*00f0*/                   LDG.E.CI R23, [R2+0x4c] ;
+        /*00f8*/                   LDG.E.CI R24, [R2+0x70] ;
+        /*0108*/                   LDG.E.CI R25, [R2+0x74] ;
+        /*0110*/                   LDG.E.CI R26, [R2+0x78] ;
+        /*0118*/                   LDG.E.CI R27, [R2+0x7c] ;
+        /*0128*/                   DEPBAR.LE SB5, 0x4 ;
+        /*0130*/                   STS.128 [RZ], R8 ;
+        /*0138*/                   STS.128 [0x10], R12 ;
+        /*0148*/                   LDG.E.CI R8, [R2+0x50] ;
+        /*0150*/                   LDG.E.CI R9, [R2+0x54] ;
+        /*0158*/                   LDG.E.CI R10, [R2+0x58] ;
+        /*0168*/                   LDG.E.CI R11, [R2+0x5c] ;
+        /*0170*/                   LDG.E.CI R12, [R2+0x60] ;
+        /*0178*/                   LDG.E.CI R13, [R2+0x64] ;
+        /*0188*/                   LDG.E.CI R14, [R2+0x68] ;
+        /*0190*/                   LDG.E.CI R15, [R2+0x6c] ;
+        /*0198*/                   DEPBAR.LE SB5, 0x3 ;
+        /*01a8*/                   STS.128 [0x20], R4 ;
+        /*01b0*/                   STS.128 [0x30], R16 ;
+        /*01b8*/                   STS.128 [0x40], R20 ;
+        /*01c8*/                   DEPBAR.LE SB5, 0x2 ;
+        /*01d0*/                   STS.128 [0x70], R24 ;
+        /*01d8*/                   STS.128 [0x50], R8 ;
+        /*01e8*/                   STS.128 [0x60], R12 ;
+        /*01f0*/                   EXIT ;
+.L_x_0:
+        /*01f8*/                   BRA `(.L_x_0) ;
+.L_x_2:
+
+
+//--------------------- .text._Z15smem_kernel_128P4int4 --------------------------
+	.section	.text._Z15smem_kernel_128P4int4,"ax",@progbits
+	.sectioninfo	@"SHI_REGISTERS=32"
+	.align	32
+        .global         _Z15smem_kernel_128P4int4
+        .type           _Z15smem_kernel_128P4int4,@function
+        .size           _Z15smem_kernel_128P4int4,(.L_x_3 - _Z15smem_kernel_128P4int4)
+        .other          _Z15smem_kernel_128P4int4,@"STO_CUDA_ENTRY STV_DEFAULT"
+_Z15smem_kernel_128P4int4:
+.text._Z15smem_kernel_128P4int4:
+        /*0008*/                   MOV R1, c[0x0][0x20] ;
+        /*0010*/                   MOV R2, c[0x0][0x140] ;
+        /*0018*/                   MOV R3, c[0x0][0x144] ;
+        /*0028*/                   LDG.E.CI.U.128 R4, [R2] ;
+        /*0030*/                   LDG.E.CI.U.128 R8, [R2+0x20] ;
+        /*0038*/                   LDG.E.CI.U.128 R12, [R2+0x30] ;
+        /*0048*/                   LDG.E.CI.U.128 R16, [R2+0x40] ;
+        /*0050*/                   LDG.E.CI.U.128 R20, [R2+0x50] ;
+        /*0058*/                   LDG.E.CI.U.128 R28, [R2+0x10] ;
+        /*0068*/                   LDG.E.CI.U.128 R24, [R2+0x70] ;
+        /*0070*/                   DEPBAR.LE SB5, 0x3 ;
+        /*0078*/                   STS.128 [RZ], R4 ;
+        /*0088*/                   STS.128 [0x20], R8 ;
+        /*0090*/                   STS.128 [0x30], R12 ;
+        /*0098*/                   DEPBAR.LE SB5, 0x1 ;
+        /*00a8*/                   STS.128 [0x40], R16 ;
+        /*00b0*/                   LDG.E.CI.U.128 R4, [R2+0x60] ;
+        /*00b8*/                   STS.128 [0x50], R20 ;
+        /*00c8*/                   LDG.E.CI.U.128 R8, [R2+0x80] ;
+        /*00d0*/                   LDG.E.CI.U.128 R12, [R2+0x90] ;
+        /*00d8*/                   LDG.E.CI.U.128 R16, [R2+0xa0] ;
+        /*00e8*/                   LDG.E.CI.U.128 R20, [R2+0xb0] ;
+        /*00f0*/                   DEPBAR.LE SB5, 0x5 ;
+        /*00f8*/                   STS.128 [0x10], R28 ;
+        /*0108*/                   LDG.E.CI.U.128 R28, [R2+0xc0] ;
+        /*0110*/                   DEPBAR.LE SB5, 0x3 ;
+        /*0118*/                   STS.128 [0x60], R4 ;
+        /*0128*/                   STS.128 [0x80], R8 ;
+        /*0130*/                   STS.128 [0x90], R12 ;
+        /*0138*/                   DEPBAR.LE SB5, 0x1 ;
+        /*0148*/                   STS.128 [0xa0], R16 ;
+        /*0150*/                   LDG.E.CI.U.128 R4, [R2+0xd0] ;
+        /*0158*/                   STS.128 [0xb0], R20 ;
+        /*0168*/                   LDG.E.CI.U.128 R8, [R2+0xe0] ;
+        /*0170*/                   LDG.E.CI.U.128 R12, [R2+0xf0] ;
+        /*0178*/                   LDG.E.CI.U.128 R16, [R2+0x100] ;
+        /*0188*/                   LDG.E.CI.U.128 R20, [R2+0x110] ;
+        /*0190*/                   STS.128 [0x70], R24 ;
+        /*0198*/                   DEPBAR.LE SB5, 0x5 ;
+        /*01a8*/                   STS.128 [0xc0], R28 ;
+        /*01b0*/                   LDG.E.CI.U.128 R24, [R2+0x120] ;
+        /*01b8*/                   LDG.E.CI.U.128 R28, [R2+0x170] ;
+        /*01c8*/                   DEPBAR.LE SB5, 0x4 ;
+        /*01d0*/                   STS.128 [0xd0], R4 ;
+        /*01d8*/                   STS.128 [0xe0], R8 ;
+        /*01e8*/                   STS.128 [0xf0], R12 ;
+        /*01f0*/                   DEPBAR.LE SB5, 0x2 ;
+        /*01f8*/                   STS.128 [0x100], R16 ;
+        /*0208*/                   LDG.E.CI.U.128 R4, [R2+0x130] ;
+        /*0210*/                   STS.128 [0x110], R20 ;
+        /*0218*/                   LDG.E.CI.U.128 R8, [R2+0x140] ;
+        /*0228*/                   LDG.E.CI.U.128 R12, [R2+0x150] ;
+        /*0230*/                   LDG.E.CI.U.128 R16, [R2+0x160] ;
+        /*0238*/                   LDG.E.CI.U.128 R20, [R2+0x180] ;
+        /*0248*/                   DEPBAR.LE SB5, 0x5 ;
+        /*0250*/                   STS.128 [0x120], R24 ;
+        /*0258*/                   STS.128 [0x170], R28 ;
+        /*0268*/                   LDG.E.CI.U.128 R24, [R2+0x1d0] ;
+        /*0270*/                   LDG.E.CI.U.128 R28, [R2+0x1f0] ;
+        /*0278*/                   DEPBAR.LE SB5, 0x4 ;
+        /*0288*/                   STS.128 [0x130], R4 ;
+        /*0290*/                   STS.128 [0x140], R8 ;
+        /*0298*/                   STS.128 [0x150], R12 ;
+        /*02a8*/                   DEPBAR.LE SB5, 0x2 ;
+        /*02b0*/                   STS.128 [0x160], R16 ;
+        /*02b8*/                   LDG.E.CI.U.128 R4, [R2+0x190] ;
+        /*02c8*/                   STS.128 [0x180], R20 ;
+        /*02d0*/                   LDG.E.CI.U.128 R8, [R2+0x1a0] ;
+        /*02d8*/                   LDG.E.CI.U.128 R12, [R2+0x1b0] ;
+        /*02e8*/                   LDG.E.CI.U.128 R16, [R2+0x1c0] ;
+        /*02f0*/                   LDG.E.CI.U.128 R20, [R2+0x1e0] ;
+        /*02f8*/                   DEPBAR.LE SB5, 0x5 ;
+        /*0308*/                   STS.128 [0x1d0], R24 ;
+        /*0310*/                   STS.128 [0x1f0], R28 ;
+        /*0318*/                   DEPBAR.LE SB5, 0x2 ;
+        /*0328*/                   STS.128 [0x190], R4 ;
+        /*0330*/                   STS.128 [0x1a0], R8 ;
+        /*0338*/                   STS.128 [0x1b0], R12 ;
+        /*0348*/                   STS.128 [0x1c0], R16 ;
+        /*0350*/                   STS.128 [0x1e0], R20 ;
+        /*0358*/                   EXIT ;
+.L_x_1:
+        /*0368*/                   BRA `(.L_x_1) ;
+        /*0370*/                   NOP;
+        /*0378*/                   NOP;
+.L_x_3:
